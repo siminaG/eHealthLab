@@ -1,0 +1,27 @@
+<div>
+    <h2>Pacient Table</h2>
+        <table>
+            <thead>
+               <tr>
+                  <th>#ID</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                  <th>Gender</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr *ngFor="let patient of patientList">
+                  <th>{{ patient.id }}</th>
+                  <td>{{ patient.first_name }}</td>
+                  <td>{{ patient.last_name }}</td>
+                  <td>{{ patient.email}}</td>
+                  <td>{{ patient.gender }}</td>
+                  <!-- <td>
+                     <button type="button" >Edit</button>
+                     <button type="button" >Delete</button>
+                  </td> -->
+               </tr>
+            </tbody>
+         </table>
+</div>
