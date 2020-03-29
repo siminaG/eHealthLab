@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
 import {MatTableModule} from '@angular/material/table';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 const appRoutes: Routes = [
   {path: '', redirectTo: '/table', pathMatch: 'full'},
@@ -32,6 +33,7 @@ const appRoutes: Routes = [
     MatInputModule,
     MatTableModule,
     MatFormFieldModule,
+    MatPaginatorModule,
     BrowserAnimationsModule
   ],
   providers: [],
